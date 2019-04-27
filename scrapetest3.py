@@ -4,7 +4,7 @@ html = urlopen("http://www.pythonscraping.com/pages/page3.html")
 bsObj = BeautifulSoup(html.read(), "html.parser")
 
 #자식 다루기
- for child in bsObj.find("table",{"id":"giftList"}).children:
+for child in bsObj.find("table",{"id":"giftList"}).children:
      print(child)
 
 #형제 다루기
