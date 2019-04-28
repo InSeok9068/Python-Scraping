@@ -1,7 +1,14 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
+import re
+
 def ngrams(input, n):
+    input = re.sub('\n+', " ", input)
+    input = re.sub(' +', " ", input)
+    input = bytes(input, "UTF-8")
+    input = input.decode("ascii", "ignore")
+    print(input)
     input = input.split(' ')
     output = []
     for i in range(len(input)-n+1):
