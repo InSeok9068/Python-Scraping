@@ -13,3 +13,9 @@ CSV의 파일의 데이터를 필터링 해서 보여줌
 # requests 설치
 pip install requests
 
+# OCR 라이브러리 테서랙트 설치(이 프로젝트에선 사용하지않음)
+https://github.com/tesseract-acr/tesseract/wiki
+
+#넘파이 설치
+pip install numpy
+
